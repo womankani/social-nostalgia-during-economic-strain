@@ -87,6 +87,14 @@ The results of the study suggest that initially and past a certain threshold, ec
 - Annual frequency of the data limits ability to identify short-term dynamics and relationships.
 - Analysis is observational and not does not establish causal mechanisms or predictive patterns.
 
+## Repository Structure
+trend-resurgence-project/
+├── README.md
+├── data/
+├── notebooks/
+├── outputs/
+└── scripts/
+
 ## Future Work
 - Sourcing trend popularity data through more direct sources for increased reliability.
 - Increasing the frequency of data to gain short-term insights.
