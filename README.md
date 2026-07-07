@@ -2,9 +2,9 @@
 An empirical study of how economic pressure influences social trends that are driven by nostalgia in fashion, cinema, and technology.
 
 ## Motivation
-Economic instability is often accompanied by the return of certain previously prominent social trends. This is most notably  observed in the revival of vintage-style clothing, increased appeal of cinematic reboots, and an uptick in the sales of retro technologies. Such patterns imply that when ground reality feels unstable, people look to the past for comfort.
+A surface-level glance at trending topics on social media often reveals that certain previously gone-by trends are resurfacing. These patterns imply that when financial reality feels strained, people begin to feel wistful and engage with the past for comfort.
 
-This project investigates whether the effects of economic strain on the resurgence of social trends with nostalgic value are reflected in empirical data.
+This project investigates whether the effects of economic strain on the resurgence of social trends with reminiscence value are reflected in empirical data.
 
 **Research Question:**
 What is the impact of economic stress on the revival of older societal trends in fashion, cinema, and technology?
@@ -37,10 +37,13 @@ Economic pressure is represented by an economic stress index constructed through
 
 A binary stress indicator is also constructed to mark periods of extreme economic strain. It is based off the stress index, where a stress value of above 0 coincides with 1 on the binary scale, and a value of below 0 coincides with 0.
 
-### Timing and Lag Structure
+### Lagged Variables
 Economic stress is unlikely to trigger an immediate social response. It is more probable that the stimulus of immense stress will cause an initial disturbance in the consumption, but will then lead to an increase in engagement with trends. To account for this, the analysis examines social popularity indices both concurrently and with time lags.
 
 Lagging the social indices aligns future social responses with past economic data, allowing for the distinction between initial disruption and later trend revival as a behavioral consequence of economic stress.
+
+### Correlations
+The Pearson correlation coefficients between Trend Popularity and Economic Stress at multiple lags (zero, one-year and two-year) were calculated using the Pandas function in Python.
 
 ## Key Visualizations & What They Show
 <img width="560" height="356" alt="Economic Stress Index vs  Trend Popularity Index over Time" src="https://github.com/user-attachments/assets/2794d49a-46bb-4618-9e1c-5c0da7d90645" />
@@ -68,14 +71,14 @@ Fig 5. shows trend popularity over years before, during and after high stress ye
 Fig 6. shows the relative uniformity of categorical indices that make up the Trend Popularity Index alongside economic stress
 
 ## Key Findings
-1. **Same-year relationships are weak.**
-Concurrent comparisons show weak or unclear relationships between economic stress and increased trend popularity within the same year. OLS run on same year relationships returned a negative coefficient, further supporting the finding.
-2. **Consumption and trend popularity goes down during stress.**
-Average trend popularity is lower during high-stress years, suggesting that an influx of economic pressure disrupts social trends and consumption rather than immediately triggering trend resurgence.
-3. **Nostalgia-seeking behaviour emerges later, as trends surge again.**
-Event-style graphs and lagged comparisons demonstrate trend resurgence in the years following magnified economic strain. OLS run on lagged relationships returned a small positive coefficient, supporting the finding.
-4. **The pattern is consistent across categories.**
-Categorical breakup of the trend popularity index into sectors like fashion, cinema and technology demonstrates similar delayed trend resurgence, indicating a broad social reaction instead of a category-specific phenomenon.
+1. **Weak Same-Year Relationships**
+Visual and concurrent comparisons show an unclear relationship between economic strain and trend popularity, especially increased popularity within the same year.
+2. **Decrease In Consumption During Stress**
+Consumption and trend popularity both go down during the initial periods of economic stress.
+3. **Wistful Behaviour Emerges Later**
+Fig. 2 displays average trend popularity when the economic strain index is lagged by two years, significantly higher than when the strain index remains un-lagged.
+4. **Category Consistency**
+The pattern is consistent across categories. Categorical breakup of the trend popularity index into sectors like fashion, cinema and technology indicates a broad social reaction instead of a category-specific phenomenon.
 
 These findings emphasize on the importance of timing when noting a social reaction to an economic stimulus. The nostalgia-driven resurgence of certain trends appears to be not an immediate reaction to economic strain, but rather a delayed response that materializes as stress persists.
 
